@@ -13,10 +13,9 @@ ARG NB_UID
 ENV USER ${NB_USER}
 ENV HOME /home/${NB_USER}
 
-# RUN adduser --disabled-password \
-#     --gecos "Default user" \
-#     --uid ${NB_UID} \
-#     ${NB_USER}
+RUN pwd && ls -alt
+# add . ${HOME}
+
 WORKDIR ${HOME}
 USER ${USER}
 RUN git clone https://github.com/cfoisy-osisoft/nasa_bearing.git
