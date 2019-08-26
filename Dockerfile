@@ -19,3 +19,5 @@ ENV HOME /home/${NB_USER}
 #     ${NB_USER}
 WORKDIR ${HOME}
 USER ${USER}
+RUN git clone https://github.com/cfoisy-osisoft/nasa_bearing.git
+WORKDIR ${HOME}/nasa_bearing
