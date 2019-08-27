@@ -18,5 +18,5 @@ RUN pwd && ls -alt
 
 WORKDIR ${HOME}
 USER ${USER}
-RUN git clone https://github.com/cfoisy-osisoft/nasa_bearing.git
+RUN git clone https://github.com/mofff/nasa_bearing.git
 WORKDIR ${HOME}/nasa_bearing
